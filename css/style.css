@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", Arial, sans-serif;
+  background-color: #FFFFFF;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+
+.arrow {
+  border: solid #828282;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+.arrow-down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+@keyframes slideUpFromBottom {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes showArrow {
+  0% {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    opacity: 1;
+  }
+}
+.intro-section {
+  position: relative;
+  height: 100vh;
+}
+.intro-section .intro-inner {
+  position: absolute;
+  top: 40%;
+  color: #828282;
+  width: 100%;
+  transform: translateY(-50%);
+  padding: 25px;
+}
+.intro-section .intro-inner .name-heading {
+  margin: 10px 0;
+  letter-spacing: 7px;
+  font-size: 36px;
+  font-weight: 400;
+  animation: 3s ease-out 0s 1 slideUpFromBottom;
+}
+.intro-section .intro-inner .intro-tagline {
+  margin: 10px 0;
+  letter-spacing: 5px;
+  animation: 2s ease-out 0s 1 slideUpFromBottom;
+}
+.intro-section .intro-baseline {
+  position: absolute;
+  width: 100%;
+  top: 80%;
+  text-align: center;
+}
+.intro-section .intro-baseline .arrow.arrow-down {
+  animation: 3s ease-in 0s 1 showArrow;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+//animations
+@keyframes slideUpFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes showArrow {
+    0% {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        opacity: 1;
+    }
+}

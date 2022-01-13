@@ -1,0 +1,39 @@
+//styles for intro section
+.intro-section {
+    position: relative;
+    height: 100vh;
+
+    .intro-inner {
+        position: absolute;
+        top: 40%;
+        color: $lightBlack;
+        width: 100%;
+        transform: translateY(-50%);
+        padding: 25px;
+
+        .name-heading {
+            margin: 10px 0;
+            letter-spacing: 7px;
+            font-size: $xxLarge;
+            font-weight: 400;
+            animation: 3s ease-out 0s 1 slideUpFromBottom;
+        }
+
+        .intro-tagline {
+            margin: 10px 0;
+            letter-spacing: 5px;
+            animation: 2s ease-out 0s 1 slideUpFromBottom;
+        }
+    }
+
+    .intro-baseline {
+        position: absolute;
+        width: 100%;
+        top: 80%;
+        text-align: center;
+
+        .arrow.arrow-down {
+            animation: 3s ease-in 0s 1 showArrow;
+        }
+    }
+}
