@@ -1,0 +1,18 @@
+.about-section {
+    
+    .about-inner {
+        min-height: 100vh;
+        padding: 15px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 1rem;
+
+        @media (min-width: 720px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .intro-box {
+            padding: 1rem;
+        }
+    }
+}
